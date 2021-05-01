@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
@@ -6,7 +6,7 @@
 .headerBackground {
   min-height: 100vh;
   justify-content: center;
-  background-image: url(../images/office.jpg);
+  /* background-image: url("../images/office.jpg"); */
   background-position: center;
   background-size: cover;
   position: relative;
@@ -214,7 +214,7 @@ hr {
 }
 
 button {
-  background-color: #008CBA;
+  background-color: #008cba;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -224,8 +224,4 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-} */
-
-* {
-  background-color: aqua;
 }

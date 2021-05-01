@@ -2,6 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagramSquare, faLinkedinIn, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import "../index.css";
+
 
 
 function Content() {
@@ -46,7 +48,7 @@ function Content() {
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
-                <img src="../images/engineering.jpg" alt="engineering-impact"></img>
+                <img src={process.env.PUBLIC_URL + '/images/engineering.jpg'} alt="engineering" />
             </section>
 
 
@@ -56,17 +58,17 @@ function Content() {
                 <h1 style={ceoHeading}>Leadership Team</h1>
                 <div className="leadersImages">
                     <div className="imageDiv">
-                        <img className="ceoImage" src="../images/ceo1.jpg" alt="leader-img"></img>
+                        <img className="ceoImage" src={process.env.PUBLIC_URL + '/images/ceo1.jpg'} alt="leader-img"></img>
                         <h1 style={ceoTexth1}>Name<br></br><span style={{ fontWeight: "500" }}>CEO, Founder</span></h1>
                         <p style={ceoTextp}>Linkdin</p>
                     </div>
                     <div className="imageDiv">
-                        <img className="ceoImage" src="../images/ceo2.jpg" alt="leader-img"></img>
+                        <img className="ceoImage" src={process.env.PUBLIC_URL + '/images/ceo2.jpg'} alt="leader-img"></img>
                         <h1 style={ceoTexth1}>Name<br></br><span style={{ fontWeight: "500" }}>CEO, Founder</span></h1>
                         <p style={ceoTextp}>Linkdin</p>
                     </div>
                     <div className="imageDiv">
-                        <img className="ceoImage" src="../images/ceo3.jpg" alt="leader-img"></img>
+                        <img className="ceoImage" src={process.env.PUBLIC_URL + '/images/ceo3.jpg'} alt="leader-img"></img>
                         <h1 style={ceoTexth1}>Name<br></br><span style={{ fontWeight: "500" }}>CEO, Founder</span></h1>
                         <p style={ceoTextp}>Linkdin</p>
                     </div>
@@ -79,8 +81,8 @@ function Content() {
             <section className="ourPeople">
                 <h1>Our People</h1>
                 <div className="imgSlider">
-                    <img className="peopleImg" src="../images/people1.jpg" alt="leader-img"></img>
-                    <img className="peopleImg" src="../images/people2.jpg" alt="leader-img"></img>
+                    <img className="peopleImg" src={process.env.PUBLIC_URL + '/images/people1.jpg'} alt="leader-img"></img>
+                    <img className="peopleImg" src={process.env.PUBLIC_URL + '/images/people2.jpg'} alt="leader-img"></img>
                 </div>
             </section>
 
@@ -98,7 +100,7 @@ function Content() {
                         <button type="button">Contact Me </button>
                     </div>
                     <div className="rightImage" style={{ paddingRight: "50px" }}>
-                        <img id="rightImg" src="../images/contact.jpg" alt="contact Us" style={footerImg}></img>
+                        <img id="rightImg" src={process.env.PUBLIC_URL + '/images/contact.jpg'} alt="contact Us" style={footerImg}></img>
                     </div>
                 </div>
                 <div className="footer">
@@ -123,11 +125,11 @@ function Content() {
                                 <nav className="footerNav">
                                     <div className="navLinksFooter">
                                         <ul>
-                                            <li><a href=""></a>Home</li>
-                                            <li><a href=""></a>Work</li>
-                                            <li><a href=""></a>Services</li>
-                                            <li><a href=""></a>About</li>
-                                            <li><a href=""></a>Contact</li>
+                                            <li>Home</li>
+                                            <li>Work</li>
+                                            <li>Services</li>
+                                            <li>About</li>
+                                            <li>Contact</li>
                                         </ul>
                                     </div>
                                 </nav>

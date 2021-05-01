@@ -9,19 +9,18 @@ function Header() {
             <nav>
                 <a href="index.js">The IT Company</a>
                 <div className="nav-links">
-                    <FontAwesomeIcon icon={faTimes} visibility = "hidden" />
+                    <FontAwesomeIcon icon={faTimes} visibility="hidden" />
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">StartUps</a></li>
-                        <li><a href="">Let's Talk</a></li>
+                        <li><a href="./index.js">HOME</a></li>
+                        <li><a href="./index.js">Work</a></li>
+                        <li><a href="./index.js">Services</a></li>
+                        <li><a href="./index.js">About</a></li>
+                        <li><a href="./index.js">StartUps</a></li>
+                        <li><a href="./index.js">Let's Talk</a></li>
                     </ul>
                 </div>
-                {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
             </nav>
-            <div className="headerBackground">
+            <div className="headerBackground" style = {{backgroundImage: `url(${process.env.PUBLIC_URL + '/images/office.jpg'})`}}>
                 <div className="textBox">
                     <h1>We are a Modern IT Company</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
